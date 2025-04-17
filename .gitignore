@@ -1,43 +1,44 @@
 # Dependencies
-node_modules/
-/client/node_modules/
-/server/node_modules/
+node_modules
+.pnp
+.pnp.js
+__pycache__/
+.Python
+env/
+venv/
+ENV/
+*.pyc
 
-# Production build files
-/build/
-/client/build/
-/client/dist/
-/dist/
+# Testing
+coverage
+.nyc_output
 
-# Environment variables
-.env
+# Production
+build
+dist
+out
+
+# Misc
+.DS_Store
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env
 
-# Debug logs
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# IDE specific files
+# Editor
 .idea/
-.vscode/
-*.sublime-project
-*.sublime-workspace
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
